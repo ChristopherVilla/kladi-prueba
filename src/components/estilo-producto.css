@@ -1,0 +1,33 @@
+.contenido .elemento:last-child {
+	margin-bottom: 10px;
+}
+.card {
+	border-width: 0px !important;
+}
+.elemento {
+	border-radius: 20px !important;
+	width: calc(100% - 30px);
+	max-width: 640px;
+	margin-top: 10px;
+	height: fit-content !important;
+	max-height: 200px;
+}
+.elemento .card-body {
+	padding: 0;
+}
+.elemento p {
+	margin: 0;
+	margin: 0 16px;
+	width: calc(100% - 32px);
+	word-break: keep-all;
+}
+.elemento .card-body p:first-child {
+	margin-top: 14px;
+	font-size: 14px;
+	line-height: 18px;
+}
+.elemento .card-body p:last-child {
+	font-size: 12px;
+	margin-bottom: 14px;
+	line-height: 16px;
+}

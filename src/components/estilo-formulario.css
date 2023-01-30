@@ -1,0 +1,24 @@
+.contenido form {
+	margin: 0 19px;
+	width: calc(100% - 38px);
+}
+.contenido form label {
+	font-size: 12px;
+}
+
+.contenido form .form-group .form-control {
+	font-size: 14px;
+	border-radius: 0px;
+	border: 0px;
+	text-align: right;
+}
+.contenido form .form-group input#nombre::before {
+    content: '$' !important;
+}
+.contenido form .form-group #nombre {
+	text-align: left;
+}
+
+.contenido form .form-group .input-group .input-group-prepend .input-group-text{
+    border: none;
+}

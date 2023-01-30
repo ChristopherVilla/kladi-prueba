@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ListaArticulos from "./components/ListaArticulos";
+import CrearArticulo from "./components/CrearArticulo";
+import { Route, BrowserRouter as Router } from "react-router-dom";
+import { Pie } from "./components/Pie";
+import VerArticulo from "./components/VerArticulo";
+import EditarArticulo from "./components/EditaArticulo";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+	return (
+		<Router>
+			<div className="contenido">
+				<Route exact path="/" component={ListaArticulos} />
+				<Route
+					exact
+					path="/crear/"
+					component={CrearArticulo}
+				/>
+				<Route
+					exact
+					path="/editar/:id"
+					component={EditarArticulo}
+				/>
+				<Route exact path="/ver/:id" component={VerArticulo} />
+			</div>
+			<Pie />
+		</Router>
+	);
 }
 
 export default App;
