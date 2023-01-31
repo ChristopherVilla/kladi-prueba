@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kladi-prueba/static/css/main.c3b400b7.css",
-    "main.js": "/kladi-prueba/static/js/main.e3b194eb.js",
-    "static/js/787.f85d65c2.chunk.js": "/kladi-prueba/static/js/787.f85d65c2.chunk.js",
-    "index.html": "/kladi-prueba/index.html",
-    "main.c3b400b7.css.map": "/kladi-prueba/static/css/main.c3b400b7.css.map",
-    "main.e3b194eb.js.map": "/kladi-prueba/static/js/main.e3b194eb.js.map",
-    "787.f85d65c2.chunk.js.map": "/kladi-prueba/static/js/787.f85d65c2.chunk.js.map"
+    "main.css": "/static/css/main.c3b400b7.css",
+    "main.js": "/static/js/main.e8ee06ba.js",
+    "static/js/787.f85d65c2.chunk.js": "/static/js/787.f85d65c2.chunk.js",
+    "index.html": "/index.html",
+    "main.c3b400b7.css.map": "/static/css/main.c3b400b7.css.map",
+    "main.e8ee06ba.js.map": "/static/js/main.e8ee06ba.js.map",
+    "787.f85d65c2.chunk.js.map": "/static/js/787.f85d65c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c3b400b7.css",
-    "static/js/main.e3b194eb.js"
+    "static/js/main.e8ee06ba.js"
   ]
 }
