@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import {BrowserRouter as useHistory} from "react-router-dom";
 import { Link } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
@@ -8,17 +7,16 @@ import './estilo-modal.css';
 
 
 export function Acciones({ id }) {
-	let history = useHistory();
-	const [show, setMostrar] = useState(false);
+	 const [show, setMostrar] = useState(false);
 
-	const manejaCerrar = () => setMostrar(false);
-	const manejaMostrar = () => setMostrar(true);
+	 const manejaCerrar = () => setMostrar(false);
+	 const manejaMostrar = () => setMostrar(true);
 
 	function eliminar() {
 		fetch(api + "?borrar=" + id)
 			.then((respuesta) => respuesta.json())
 			.then((datosRespuesta) => {
-				history.push("/")
+				window.location.assign("/");
 			})
 			.catch(console.error);
 	}
@@ -49,7 +47,7 @@ export function Acciones({ id }) {
 			</Link>
 			<button
 				className="accion acciones accion-secundaria enlace"
-				onClick={manejaMostrar}
+				 onClick={manejaMostrar}
 			>
 				Eliminar
 			</button>
